@@ -1,18 +1,16 @@
 <?php
-
-
-// phpBB 2.x auto-generated config file
+// phpBB 3.0.x auto-generated configuration file
 // Do not change anything in this file!
-
-$dbms = 'mysql4';
-
+$dbms = 'mysqli';
 $dbhost = 'localhost';
-$dbname = 'simb_1303_mcases';
+$dbport = '';
+$dbname = 'np_crossword_deef';
 $dbuser = 'root';
 $dbpasswd = '';
+$table_prefix = 'phpbb3_';
+$acm_type = 'file';
+$load_extensions = '';
 
-$table_prefix = 'phpbb_';
-
-define('PHPBB_INSTALLED', true);
-
-?>
+@define('PHPBB_INSTALLED', true);
+// @define('DEBUG', true);
+// @define('DEBUG_EXTRA', true);
