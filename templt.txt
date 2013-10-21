@@ -1,0 +1,8 @@
+To: pstreet@bigpond.net.au
+Subject: Subscribe to ACC
+ 
+What is your Name? [yourname]
+What is your Address [youraddress]
+what is your Postcode/Zip [yourpostcode/zip]
+What is your Country [yourcountry]
+what is your e-mail address [e-mail]

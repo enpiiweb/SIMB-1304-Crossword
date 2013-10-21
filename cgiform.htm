@@ -1,0 +1,22 @@
+<!-- saved from url=(0022)http://internet.e-mail -->
+<html>
+<head><h1>testform</h1></head> 
+<body>
+<FORM ACTION="\cgi\formemail.pl" METHOD="POST">
+ What is your name?<br>
+ <INPUT TYPE="text" NAME="yourname" SIZE=40 >
+ <p>
+ What is your Quest?<br>
+ <INPUT TYPE="text" NAME="quest" SIZE=40 > <p>
+ What is your favourite colour?<br>
+ <INPUT TYPE="text" NAME ="colour"  SIZE=40>
+ <p>
+ <INPUT TYPE="submit" VALUE="Send message"> 
+ or <INPUT TYPE="reset" VALUE="Reset Form">
+ <INPUT TYPE="hidden" NAME="user" VALUE="siteID">
+ <INPUT TYPE="hidden" NAME="templtfile" VALUE="\templt\templt.txt">
+ <INPUT TYPE="hidden" NAME="responseURL"  
+ 	VALUE="http://www.yourdomain.com.au/result.htm">
+ </FORM>
+</body>
+</html>

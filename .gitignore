@@ -1,0 +1,4 @@
+/deef/config.php
+/deef/cache/*
+!/deef/cache/index.html
+!/deef/cache/.htaccess

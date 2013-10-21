@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 3.0//EN" "html.dtd">
+<HTML>
+
+<HEAD>
+
+<!--
+                *****      INSTRUCTIONS FOR CUSTOMIZING THIS FORM      *****
+
+                To customize this form, look for remarks in the file beginning with
+                5 stars ("*****"). These lines contain instructions for easily
+                customizing the most common qury form elements.
+
+-->
+
+	<LINK REL=STYLESHEET HREF="is2style.css" TYPE="text/css">
+
+    <TITLE>Index Server 2.0 Sample HTM/IDQ/HTX Search Form</TITLE>
+    <META NAME="DESCRIPTION" CONTENT="Sample query form for Microsoft Index Server">
+    <META NAME="AUTHOR"      CONTENT="Index Server Team">
+    <META NAME="KEYWORDS"    CONTENT="query, content, hit">
+    <META NAME="SUBJECT"     CONTENT="sample form">
+    <META NAME="MS.CATEGORY" CONTENT="Internet">
+    <META NAME="MS.LOCALE"   CONTENT="EN-US">
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+</HEAD>
+
+<!-- ***** To change the form's background pattern, simply save your background pattern
+       using the name IS2BKGND.GIF in the same directory as this form. ***** -->
+<BODY background="is2bkgnd.gif">
+
+<TABLE>
+
+    <TR><TD ALIGN="RIGHT"><H3>
+
+<!-- ***** The following line of text is displayed next to the form logo. -->
+        Sample HTM/IDQ/HTX Search Form
+
+        </H3></TD></TD></TR>
+    </TR>
+</TABLE>
+
+<FORM ACTION="query.idq" METHOD="GET">
+    <TABLE WIDTH=500>
+                        <TR>
+                                <td>Enter your query below:</td>
+                        </TR>
+                        <TR>
+                                <TD><INPUT TYPE="TEXT" NAME="CiRestriction" SIZE="65" MAXLENGTH="100" VALUE=""></TD>
+                                <TD><INPUT TYPE="SUBMIT" VALUE="Go"></TD>
+                        </TR>
+
+        </TABLE>
+
+<!-- The CiScope parameter allows you to control which documents are searched. To search
+                the entire document set, use a value of "/", which corresponds to the root of your web
+                virtual namespace. To search a subset of your documents, set the value equal to the
+                virtual directory you want to search.  -->
+        <INPUT TYPE="HIDDEN" NAME="CiScope" VALUE="/">
+
+        <INPUT TYPE="HIDDEN" NAME="CiMaxRecordsPerPage" VALUE="10">
+    <INPUT TYPE="HIDDEN" NAME="TemplateName" VALUE="query">
+    <INPUT TYPE="HIDDEN" NAME="CiSort" VALUE="rank[d]">
+        <INPUT TYPE="HIDDEN" NAME="HTMLQueryForm" VALUE="query.htm">
+</FORM>
+
+
+</BODY>
+</HTML>
+
